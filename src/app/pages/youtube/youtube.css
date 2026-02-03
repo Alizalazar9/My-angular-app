@@ -1,0 +1,60 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  width: 160px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+button {
+  padding: 14px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.primary {
+  background-color: red;
+  color: white;
+}
+
+.secondary {
+  background-color: #eee;
+  color: #333;
+}
+
+.back {
+  background: transparent;
+  color: #333;
+  font-size: 14px;
+}

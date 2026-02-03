@@ -1,0 +1,27 @@
+<div class="page">
+
+  <img class="logo" src="/logos/Netflix.png" alt="Netflix">
+
+  <h1>Netflix</h1>
+  <p class="subtitle">What would you like to do?</p>
+
+  <div class="actions">
+    <button class="primary" (click)="openApp()">Open Netflix</button>
+    <button class="secondary" (click)="DownloadApp()">Download Netflix</button>
+  </div>
+
+  <button class="back" routerLink="/">← Back to Home</button>
+
+  <div class="updates">
+  <h2>What’s new</h2>
+
+  <p *ngIf="loading">Loading updates...</p>
+
+  <ul *ngIf="!loading">
+    <li *ngFor="let u of updates">
+      <strong>{{ u.title }}</strong>
+    </li>
+  </ul>
+</div>
+
+</div>
