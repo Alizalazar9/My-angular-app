@@ -1,26 +1,6 @@
-[
-  {
-    "id": "netflix-desktop",
-    "name": "Netflix Desktop",
-    "description": "Stream Netflix movies and TV shows on your desktop.",
-    "iconUrl": "/assets/icons/netflix.ico",
-    "exeUrl": "netflix-desktop-1.0.exe",
-    "version": "1.0.0"
-  },
-  {
-    "id": "youtube-desktop",
-    "name": "YouTube Desktop",
-    "description": "Watch YouTube videos in a native desktop application.",
-    "iconUrl": "/assets/icons/youtube.ico",
-    "exeUrl": "youtube-desktop-1.2.exe",
-    "version": "1.2.0"
-  },
-  {
-    "id": "spotify-desktop",
-    "name": "Spotify Desktop",
-    "description": "Listen to music and podcasts with Spotify on desktop.",
-    "iconUrl": "/assets/icons/spotify.ico",
-    "exeUrl": "spotify-desktop-1.1.exe",
-    "version": "1.1.0"
-  }
-]
+{
+  "id":"1",
+  "name":"Aliza's app",
+  "description":"Aliza's app is a simple app that allows you to search for movies and TV shows.",
+  "exeUrl":"/AppStore.exe"
+}

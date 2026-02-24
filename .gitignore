@@ -1,11 +1,12 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # Compiled output
-/dist
+# /dist
+# client/dist/
+# server/dist/
+
 /tmp
-client/dist/
 client/.angular/
-server/dist/
 server/build/
 /out-tsc
 /bazel-out
