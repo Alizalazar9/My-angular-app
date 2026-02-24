@@ -15,6 +15,14 @@ def main():
     spec_file = os.path.join(this_dir, "build.spec")
     # Run from project root so SPEC_DIR = getcwd() is correct
     project_root = os.path.dirname(this_dir)
+    exe_path = os.path.join(project_root, "server", "dist", "AppStore.exe")
+    if os.path.isfile(exe_path):
+        try:
+            with open(exe_path, "r+b"):
+                pass
+        except PermissionError:
+            print("ERROR: AppStore.exe is in use (or locked). Close it and try again.")
+            sys.exit(1)
     result = subprocess.run(
         [
             sys.executable, "-m", "PyInstaller", spec_file,

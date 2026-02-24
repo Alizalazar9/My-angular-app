@@ -12,12 +12,12 @@ Output: dist/AppStore.exe
 
 import os
 
-# Run from project root; cwd = project root
-SPEC_DIR = os.getcwd()
+# Project root: use cwd (build.py sets cwd=project_root when invoking PyInstaller)
+SPEC_DIR = os.path.abspath(os.getcwd())
 
 def _resolve_datas():
     datas = [
-        (os.path.join(SPEC_DIR, 'server', 'manifest.json'), '.'),
+        (os.path.join(SPEC_DIR, 'manifest.json'), '.'),
     ]
     angular_candidates = [
         (os.path.join(SPEC_DIR, 'client', 'dist', 'my-first-angular-app', 'browser'), 'ui/dist'),
