@@ -3,11 +3,15 @@
 # Compiled output
 /dist
 /tmp
+client/dist/
+client/.angular/
+server/dist/
+server/build/
 /out-tsc
 /bazel-out
 
 # Node
-/node_modules
+node_modules
 npm-debug.log
 yarn-error.log
 
