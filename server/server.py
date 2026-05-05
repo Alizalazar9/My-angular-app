@@ -313,16 +313,16 @@ def internal_error(e):
     return jsonify({"error": "Internal server error"}), 500
 
 
-def open_browser():
+def open_browser(host: str, port: int):
     """Open default browser to the app (after short delay)."""
-    webbrowser.open("http://127.0.0.1:5000")
+    webbrowser.open(f"http://{host}:{port}")
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 5001))
     host = os.environ.get("HOST", "127.0.0.1")
     logger.info("Starting server on %s:%d", host, port)
     logger.info("Static dir exists: %s", static_dir.exists())
     Thread(target=_watchdog, daemon=True).start()
-    Timer(1.0, open_browser).start()
+    Timer(1.0, lambda: open_browser(host, port)).start()
     app.run(host=host, port=port, debug=False, use_reloader=False)

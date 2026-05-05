@@ -38,7 +38,7 @@ The exe bundles the built client and knows how to find it (bundled inside exe or
    pip install -r server/requirements.txt
    python server/server.py
    ```
-   Opens http://127.0.0.1:5000
+   Opens http://127.0.0.1:5001 (or the `PORT` you set)
 
 ## Build exe
 
