@@ -325,4 +325,7 @@ if __name__ == "__main__":
     logger.info("Static dir exists: %s", static_dir.exists())
     Thread(target=_watchdog, daemon=True).start()
     Timer(1.0, open_browser).start()
+    for key in ("WERKZEUG_SERVER_FD", "WERKZEUG_RUN_MAIN", "FLASK_RUN_FROM_CLI"):
+        if key in os.environ:
+            os.environ.pop(key)
     app.run(host=host, port=port, debug=False, use_reloader=False)
