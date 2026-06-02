@@ -319,7 +319,7 @@ def open_browser():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 5001))
     host = os.environ.get("HOST", "127.0.0.1")
     logger.info("Starting server on %s:%d", host, port)
     logger.info("Static dir exists: %s", static_dir.exists())
