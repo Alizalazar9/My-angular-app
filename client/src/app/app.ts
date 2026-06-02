@@ -17,7 +17,7 @@ export class App implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.pingInterval = setInterval(() => {
       this.http.get('/ping').subscribe({ error: () => {} });
-    }, 4000);
+    }, 500);
   }
 
   ngOnDestroy(): void {
