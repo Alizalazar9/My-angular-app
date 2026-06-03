@@ -95,13 +95,13 @@ _download_counts: dict[str, int] = {}
 
 # For "close browser = shut down": last time we got a ping from the client
 _last_activity: float = 0.0
-_shutdown_idle_seconds = 0.5
+_shutdown_idle_seconds = 1.5
 
 
 def _watchdog():
     """If no client activity for _shutdown_idle_seconds, exit the process."""
     while True:
-        time.sleep(0.4)
+        time.sleep(1)
         if _last_activity == 0:
             continue
         if time.time() - _last_activity > _shutdown_idle_seconds:
