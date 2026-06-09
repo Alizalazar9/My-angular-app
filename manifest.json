@@ -2,7 +2,7 @@
   "id":"1",
   "name":"Aliza's app",
   "description":"Aliza's app is a simple app that allows you to search for movies and TV shows.",
-  "version": "V16.1.1",
+  "version": "V17.1.1",
   "iconPath": "server/icons/aliza-app.png",
   "supportedOS": {"windows": "server/dist/AppStore.exe"}
 }
