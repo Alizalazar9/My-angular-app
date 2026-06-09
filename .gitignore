@@ -10,6 +10,7 @@ client/.angular/
 server/build/
 /out-tsc
 /bazel-out
+build/
 
 # Node
 node_modules
